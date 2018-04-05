@@ -1,0 +1,39 @@
+{
+	"name": "ormbg/core",
+    "description": "The OrmCompany Core Library.",
+    "keywords": ["ormbg", "framework", "laravel", "core"],
+    "license": "MIT",
+    "homepage": "https://orm.bg",
+    "authors": [
+        {
+            "name": "Ivan I. Atanasov",
+            "email": "iatanasov@orm.bg"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0",
+		"doctrine/dbal" : "2.6.0",
+		"laravel/framework" : "5.5.*",
+		"nwidart/laravel-modules" : "~2.0",
+		"encore/laravel-admin" : "1.5.6",
+		"laravelcollective/html" : "5.5.*",
+		"tonjoo/taxonomy" : "3.0.*",
+		"filipgolonka/bower-config-mergetool" : "dev-master",
+		"phoenix/eloquent-meta" : "1.7.*",
+		"cviebrock/eloquent-sluggable" : "4.3.*",
+		"cybercog/laravel-eloquent-flag" : "3.12.*",
+		"rutorika/sortable" : "4.0"
+    },
+	"require-dev" : {
+		"filp/whoops" : "~2.0",
+		"fzaninotto/faker" : "~1.4",
+		"mockery/mockery" : "0.9.*",
+		"phpunit/phpunit" : "~6.0"
+	},
+    "autoload": {
+        "psr-4": {
+            "OrmBg\\": "src/OrmBg/"
+        }
+    },
+    "minimum-stability" : "dev"
+}

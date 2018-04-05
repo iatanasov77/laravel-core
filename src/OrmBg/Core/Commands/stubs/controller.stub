@@ -1,0 +1,8 @@
+<?php namespace $CLASS_NAMESPACE$;
+
+use OrmBg\Core\CRUD\ExtendedResourceController as BaseController;
+
+class $CLASS$ extends BaseController
+{
+    
+}
