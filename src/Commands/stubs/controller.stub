@@ -1,0 +1,8 @@
+<?php namespace $CLASS_NAMESPACE$;
+
+use IA\LaravelCore\CRUD\ExtendedResourceController as BaseController;
+
+class $CLASS$ extends BaseController
+{
+    
+}
