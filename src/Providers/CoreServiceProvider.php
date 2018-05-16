@@ -12,7 +12,7 @@ class CoreServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerBladeDiorectives();
+        $this->registerBladeDirectives();
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +22,7 @@ class CoreServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function registerBladeDiorectives()
+    protected function registerBladeDirectives()
     {
         Blade::directive( 'ifcontinue', function ( $expression )
         {
