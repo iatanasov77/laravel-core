@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\Helpers;
+<?php namespace IA\Laravel\Core\Helpers;
 
 class Orm
 {

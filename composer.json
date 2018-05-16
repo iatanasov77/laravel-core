@@ -3,7 +3,7 @@
     "description": "The iatanasov Laravel Core Library.",
     "keywords": ["framework", "laravel", "core"],
     "license": "MIT",
-    "homepage": "https://github.com/iatanasov77",
+    "homepage": "https://github.com/iatanasov77/laravel-core.git",
     "authors": [
         {
             "name": "Ivan I. Atanasov",
@@ -22,7 +22,8 @@
 		"phoenix/eloquent-meta" : "^1.7",
 		"cviebrock/eloquent-sluggable" : "^4.3",
 		"cybercog/laravel-eloquent-flag" : "^3.12",
-		"rutorika/sortable" : "4.0"
+		"rutorika/sortable" : "4.0",
+		"spatie/db-dumper": "^2.10"
     },
 	"require-dev" : {
 		"mockery/mockery" : "^0.9",
@@ -30,7 +31,7 @@
 	},
     "autoload": {
         "psr-4": {
-            "IA\\LaravelCore\\": "src/"
+            "IA\\Laravel\\Core\\": "src/"
         }
     },
     "minimum-stability" : "dev"

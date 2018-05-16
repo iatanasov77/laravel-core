@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\CRUD\Grid;
+<?php namespace IA\Laravel\Core\CRUD\Grid;
 
 use Encore\Admin\Grid\Column as EncoreGridColumn;
 use Illuminate\Support\Facades\URL;

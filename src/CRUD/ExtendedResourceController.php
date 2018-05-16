@@ -1,8 +1,8 @@
-<?php namespace IA\LaravelCore\CRUD;
+<?php namespace IA\Laravel\Core\CRUD;
 
 use Encore\Admin\Grid\Displayers\Actions as EncoreActions;
 use Illuminate\Http\Request;
-use IA\LaravelCore\CRUD\Grid\Grid;
+use IA\Laravel\Core\CRUD\Grid\Grid;
 
 class ExtendedResourceController extends ResourceController
 {

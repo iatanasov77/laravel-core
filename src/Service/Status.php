@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\Service;
+<?php namespace IA\Laravel\Core\Service;
 
 class Status
 {

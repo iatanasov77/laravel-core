@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\ViewComposers;
+<?php namespace IA\Laravel\Core\ViewComposers;
 
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Config;

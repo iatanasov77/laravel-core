@@ -1,9 +1,9 @@
-<?php namespace IA\LaravelCore\Model;
+<?php namespace IA\Laravel\Core\Model;
 
 use Devfactory\Taxonomy\Models\Term;
 use Phoenix\EloquentMeta\MetaTrait;
 
-use IA\LaravelCore\Model\Interfaces\MetadataAwareInterface;
+use IA\Laravel\Core\Model\Interfaces\MetadataAwareInterface;
 
 class TaxonomyTerm extends Term implements MetadataAwareInterface
 {

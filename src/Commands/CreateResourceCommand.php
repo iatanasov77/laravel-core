@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\CRUD;
+<?php namespace IA\Laravel\Core\CRUD;
 
 use Illuminate\Console\Command;
 use Nwidart\Modules\Traits\ModuleCommandTrait;

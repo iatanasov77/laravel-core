@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\Providers;
+<?php namespace IA\Laravel\Core\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;

@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\CRUD;
+<?php namespace IA\Laravel\Core\CRUD;
 
 use Devfactory\Taxonomy\Facades\TaxonomyFacade as Taxonomy;
 use Illuminate\Routing\Controller;
@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-use IA\LaravelCore\Model\Interfaces\MetadataAwareInterface;
-use IA\LaravelCore\Model\Interfaces\TaxonomyAwareInterface;
-use IA\LaravelCore\Model\Interfaces\TranslateAwareInterface;
-use IA\LaravelCore\Model\Interfaces\SortAwareInterface;
-use IA\LaravelCore\Model\Interfaces\ActivatableAwareInterface;
-use IA\LaravelCore\Service\Status;
-use IA\LaravelCore\CRUD\Exception\ResourceControllerException;
+use IA\Laravel\Core\Model\Interfaces\MetadataAwareInterface;
+use IA\Laravel\Core\Model\Interfaces\TaxonomyAwareInterface;
+use IA\Laravel\Core\Model\Interfaces\TranslateAwareInterface;
+use IA\Laravel\Core\Model\Interfaces\SortAwareInterface;
+use IA\Laravel\Core\Model\Interfaces\ActivatableAwareInterface;
+use IA\Laravel\Core\Service\Status;
+use IA\Laravel\Core\CRUD\Exception\ResourceControllerException;
 
 class ResourceController extends Controller
 {
