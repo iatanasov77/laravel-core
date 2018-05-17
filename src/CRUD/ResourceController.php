@@ -323,7 +323,7 @@ class ResourceController extends Controller
     protected function initResource()
     {
         $classSegments  = explode( '\\', get_class( $this ) );
-        $configPrefix   = $classSegments[0] === 'IA' ? 'ormbg.' : '';
+        $configPrefix   = $classSegments[0] === 'IA' ? 'ia.' : '';
 
         foreach ( $classSegments  as $key => $segment )
         {
