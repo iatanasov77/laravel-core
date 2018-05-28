@@ -25,9 +25,16 @@ class CoreServiceProvider extends ServiceProvider
     protected function registerBladeDirectives()
     {
         // Asset
-        Blade::directive( 'asset', function ( $path )
+        Blade::directive( 'asset', function ( $expression )
         {
-            return sprintf( "/%s/%s", config( 'app.assets_root' ), $path );
+            list( $path, $theme ) = explode( ', ', $expression );
+            
+            return sprintf( "%s/%s/%s/%s",
+                Config::get( 'app.url' ),
+                Config::get( 'ia.assets_root', 'assets' ),
+                trim( $theme ),
+                trim( $path )
+            );
         });
         
         Blade::directive( 'ifcontinue', function ( $expression )
