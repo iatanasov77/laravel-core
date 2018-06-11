@@ -38,6 +38,15 @@ class CoreServiceProvider extends ServiceProvider
             );
         });
         
+        // File
+        Blade::directive( 'file', function ( $file )
+        {
+            return sprintf( "%s/%s",
+                Config::get( 'ia.upload_provider' ),
+                $file
+            );
+        });
+        
         Blade::directive( 'ifcontinue', function ( $expression )
         {
             return "<?php if( {$expression} ) continue; ?>";
