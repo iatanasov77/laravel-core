@@ -11,18 +11,12 @@ class FileManagerController extends Controller
     {
         $file   = pathinfo( $file, PATHINFO_FILENAME ); // Strip the extension
         
-        if ( Cache::has( $file ) )
+        if ( ! Cache::has( $file ) )
         {
-            $filePath   = Cache::get( $file );
+            Cache::forever( $file, $this->getFilePath( $file ) );
         }
-        else
-        {
-            $filePath = $this->getFilePath( $file );
-            
-            Cache::forever( $file, $filePath );
-        }
-
-        $path       = Config::get( 'ia.upload_path' ) . $filePath;
+        
+        $path       = Config::get( 'ia.upload_path' ) . Cache::get( $file );
         $headers    = [
             'Content-Type'  => mime_content_type( $path )
         ];
@@ -35,16 +29,12 @@ class FileManagerController extends Controller
     protected function getFilePath( $file )
     {
         $parts  = explode( '-', $file );
-        if ( class_exists( $parts[0] ) )
-        {
-            $class  = $parts[0];
-            $entity = $class::find( ( int ) $parts[2] );
-        }
-        else
-        {
-            $entity = DB::table( $parts[0] )->find( ( int ) $parts[2] );
-        }
-            
+        $class  = Config::get( 'ia.entity_map.' . $parts[0], $parts[0] );
+    
+        $entity = class_exists( $class ) 
+                    ? $class::find( ( int ) $parts[2] ) 
+                    : DB::table( $class )->find( ( int ) $parts[2] );
+       
         if ( $entity instanceof \Dimsav\Translatable\Translatable )
         {
             $entity = $entity->translate( App::getLocale(), true );
