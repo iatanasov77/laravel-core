@@ -1,5 +1,4 @@
-<?php //namespace IA\Laravel\Core\Http\Controller;
-namespace App\Http\Controllers;
+<?php namespace IA\Laravel\Core\Http\Controller;
 
 use Spatie\DbDumper\Databases\MySql as DbDumper;
 
