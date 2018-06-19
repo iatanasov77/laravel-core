@@ -4,6 +4,8 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Config;
 
+use IA\Laravel\Core\Helpers\FS;
+
 class CoreServiceProvider extends ServiceProvider
 {
     /**
@@ -41,10 +43,7 @@ class CoreServiceProvider extends ServiceProvider
         // File
         Blade::directive( 'file', function ( $file )
         {
-            return sprintf( "%s/%s.ext",
-                Config::get( 'ia.upload_provider' ),
-                $file
-            );
+            return FS::getFile( $file );
         });
         
         // IfContinue

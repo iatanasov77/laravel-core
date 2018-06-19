@@ -1,6 +1,6 @@
 <?php namespace IA\Laravel\Core\Helpers;
 
-class Orm
+class I18n
 {
     public static function switchLocale( $locale )
     {
