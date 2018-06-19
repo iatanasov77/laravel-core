@@ -30,11 +30,11 @@ class FileManagerController extends Controller
     {
         $parts  = explode( '-', $file );
         $class  = Config::get( 'ia.entity_map.' . $parts[0], $parts[0] );
-        
-        $entity = class_exists( $class )
-        ? $class::find( ( int ) $parts[2] )
-        : DB::table( $class )->find( ( int ) $parts[2] );
-        
+    
+        $entity = class_exists( $class ) 
+                    ? $class::find( ( int ) $parts[2] ) 
+                    : DB::table( $class )->find( ( int ) $parts[2] );
+       
         if ( $entity instanceof \Dimsav\Translatable\Translatable )
         {
             $entity = $entity->translate( App::getLocale(), true );
