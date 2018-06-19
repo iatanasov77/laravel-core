@@ -1,7 +1,7 @@
-<?php namespace IA\LaravelCore\CRUD\Grid\Tools;
+<?php namespace IA\Laravel\Core\CRUD\Grid\Tools;
 
 use Encore\Admin\Grid\Tools\Paginator as EncorePaginator;
-use IA\LaravelCore\CRUD\Grid\Grid;
+use IA\Laravel\Core\CRUD\Grid\Grid;
 
 class Paginator extends EncorePaginator
 {

@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\CRUD\Grid;
+<?php namespace IA\Laravel\Core\CRUD\Grid;
 
 use Closure;
 use Encore\Admin\Grid as EncoreGrid;

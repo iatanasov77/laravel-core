@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\Model\Interfaces;
+<?php namespace IA\Laravel\Core\Model\Interfaces;
 
 interface ActivatableAwareInterface
 {

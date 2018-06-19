@@ -1,4 +1,4 @@
-<?php namespace IA\LaravelCore\I18n;
+<?php namespace IA\Laravel\Core\I18n;
 
 use Illuminate\Translation\Translator as LaravelTranslator;
 use Illuminate\Events\Dispatcher;
